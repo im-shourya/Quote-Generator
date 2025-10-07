@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Quote Generator</h1>
+            <button class="theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+        </header>
+
+        <main>
+            <div class="quote-box" id="quote-box">
+                <p class="quote" id="quote-content">
+                <span class="placeholder">Click "New Quote" to start!</span>
+                </p>
+                <p class="author" id="quote-author"></p>
+
+                <div class="actions">
+                <button class="action-btn" id="copy-btn" aria-label="Copy quote">Copy</button>
+                </div>
+            </div>
+
+            <button class="new-quote-btn" id="new-quote-btn">New Quote</button>
+        </main>
+
+        <section class="history-section">
+            <h2>History</h2>
+            <div class="history-container" id="history-container">
+                <p id="history-placeholder">Previously viewed quotes will appear here.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
